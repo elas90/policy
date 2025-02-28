@@ -1,0 +1,284 @@
+@font-face {
+  font-family: "Metropolis-Black";
+  src: url("../fonts/Metropolis-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-Regular";
+  src: url("../fonts/Metropolis-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url("../fonts/Metropolis-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-ExtraBold";
+  src: url("../fonts/Metropolis-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url("../fonts/Metropolis-Bold.otf") format("opentype");
+}
+
+textarea {
+  resize: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-5 {
+  flex: 5;
+}
+
+.flex-6 {
+  flex: 6;
+}
+
+body {
+  width: 19.2rem;
+  overflow-x: hidden;
+  opacity: 0;
+  margin: 0 !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 14rem;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #BA93FF;
+}
+
+.mj-index {
+  position: relative;
+  background-color: #BA93FF;
+  padding-bottom: 1.7rem;
+}
+.mj-index .top-bg {
+  background: linear-gradient(158deg, #FFF4CA 0%, rgba(106, 187, 253, 0.61) 48%, #F286FF 71%, #BA93FF 100%);
+  border-radius: 180px;
+  filter: blur(50px);
+  width: 100%;
+  height: 11.6rem;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mj-index .mj-index-container {
+  position: relative;
+  z-index: 10;
+}
+.mj-index .top-fixed-area {
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 10000;
+  background-color: #BA93FF;
+}
+.mj-index .top-fixed-area .top-fixed-bg {
+  background: linear-gradient(158deg, #FFF4CA 0%, rgba(106, 187, 253, 0.61) 48%, #F286FF 71%, #BA93FF 100%);
+  border-radius: 180px;
+  filter: blur(50px);
+  width: 100%;
+  height: 11.6rem;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.mj-index .top-fixed-area .top-fixed-btn {
+  width: 5.2rem;
+  height: 1rem;
+  border-radius: 0.18rem;
+  color: white;
+  font-size: 0.336rem;
+  font-family: Metropolis-Bold;
+  margin-right: 0.36rem;
+  position: relative;
+  z-index: 10;
+}
+.mj-index .top-fixed-area .top-fixed-btn:first-child {
+  background-color: #FF6363;
+}
+.mj-index .top-fixed-area .top-fixed-btn:last-child {
+  background-color: #985FFE;
+}
+.mj-index .top-fixed-area .top-fixed-btn:nth-child(2) {
+  background-color: #985FFE; /* 你想要的颜色 */
+}
+.mj-index .index-card-container {
+  margin-bottom: 0.4rem;
+}
+.mj-index .index-card-container .card-container {
+  padding: 0.6rem 0.4rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3rem;
+}
+.mj-index .index-card-container .card-container .container-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.mj-index .index-card-container .card-container .container-title .title {
+  font-size: 0.5rem;
+  font-family: Metropolis-Black;
+  color: #040003;
+}
+.mj-index .index-card-container .card-container .container-title .coin {
+  width: 1.04rem;
+  display: block;
+  margin-left: 0.32rem;
+}
+.mj-index .index-card-container .card-container .container-title .des {
+  font-size: 0.3rem;
+  margin-left: 0.3rem;
+  font-family: Metropolis-Medium;
+  color: #222;
+}
+.mj-index .index-card-container .card-container .make-area .area-title {
+  font-family: Metropolis-ExtraBold;
+  color: #222222;
+  font-size: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.mj-index .index-card-container .card-container .make-area .area-list {
+  background: rgba(255, 255, 255, 0.9);
+  align-items: flex-start;
+}
+.mj-index .index-card-container .card-container .
+ .area-list .area-item {
+  width: calc(33.3333333333% - 0.56rem);
+  padding: 0.3rem 0.1rem 0.3rem 0.46rem;
+  font-family: Metropolis-Medium;
+  font-size: 0.2rem;
+  line-height: 0.24rem;
+  position: relative;
+}
+.mj-index .index-card-container .card-container .make-area .area-list .area-item:after {
+  position: absolute;
+  content: "";
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  left: 0.2rem;
+  top: 0.32rem;
+  background-color: #FF6363;
+}
+.mj-index .index-card-container .card-container .make-area .area-list .area-item:nth-child(even):after {
+  background-color: #985FFE;
+}
+
+/* Start of integrated CSS for Host Income and Agency Admin Income */
+.mj-index .index-card-container .card-container .policy-content {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.mj-index .index-card-container .card-container .policy-content .subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000; /* Black for subtitle */
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area {
+    width: 100%;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 0;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row .table-td {
+    width: 25%;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row .table-td:first-child {
+    font-weight: bold;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row:last-child .table-td {
+    border-bottom: none;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row:nth-child(even) .table-td {
+    background-color: #FFF4F1;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row .table-td {
+    background: #F4EEFF;
+    border-bottom: 0.04rem solid #FFFFFF;
+    border-right: 0.04rem solid #FFFFFF;
+    flex: 1;
+    font-size: 0.2rem;
+    color: #222;
+    font-family: Metropolis-Medium;
+    text-align: center;
+    height: 0.72rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mj-index .index-card-container .card-container .policy-content .table-area .table-row .table-td:first-child {
+    font-size: 0.24rem;
+    font-family: Metropolis-Bold;
+    flex: 1.5;
+}
+
+/* End of integrated CSS */
